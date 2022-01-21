@@ -5,4 +5,4 @@ from .models import Coordinate
 class CoordinateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Coordinate
-        fields = '__all__'
+        fields = ['id', 'x', 'y', 'z']
